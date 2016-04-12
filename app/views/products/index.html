@@ -17,15 +17,15 @@
     </div>
   </div>
   <div class="row">
-    <div ng-repeat="product in products" class="col-lg-3 col-md-4 col-sm-6 product-container">
+    <div ng-repeat="product in products" class="col-lg-4 col-md-6 col-sm-6 product-container" ng-mouseenter="product.show=true" ng-mouseleave="product.show=false">
       <div class="col-md-12">
-        <img src="{{product.primary_image}}" onerror="this.src='../../images/image_not_found.png'">
-        <div class="col-md-12 product-info">
+        <img src="{{product.primary_image}}" onerror="this.src='../../images/image_not_found.png'" />
+        <div class="col-md-12 product-info product-info-{{product.id}}">
           </br>
           <div class="product-title">
             <p><b>{{product.title}}</b></p>
           </div>
-          <p><b>${{product.price}}</b></p>
+          <p><b>{{product.price}} kr</b></p>
           <div class="star-ratings-css">
             <div class="star-ratings-css-top" style="width: {{product.rating / 5.0 * 100}}%">
               <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -43,6 +43,34 @@
               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
             </button>
           </div>
+        </div>
+      </div>
+      <div class="product-detail product-detail-{{product.id}} col-md-12" ng-show="product.show" ng-init="product.shown_image=product.primary_image">
+        <div class="product-images-sizes">
+          <div class="product-images">
+            <img class="product-shown-image" src="{{product.shown_image}}" onerror="this.src='../../images/image_not_found.png'" />
+            <div ng-repeat="image in product.images" ng-click="product.shown_image=image.url">
+              <img class="thumb" src="{{image.thumbnail}}" onerror="this.src='../../images/image_not_found.png'" style="top: {{$index * 60 + 40}}px" />
+            </div>
+          </div>
+          <div class="product-sizes">
+            <p>AVAILABLE SIZES</p>
+            <p>{{product.sizes.join(' ')}}</p>
+          </div>
+        </div>
+        <div class="star-ratings-css">
+          <div class="star-ratings-css-top" style="width: {{product.rating / 5.0 * 100}}%">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <span class="star-ratings-css-bottom">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </span>
+        </div>
+        <div class="product-title-price-brand">
+          <p><b>{{product.title}}</b></p>
+          <p><b>{{product.price}} kr</b></p>
+          <p class="brand"><b>{{product.brand}}</b></p>
+          <p><b>Colors: {{product.colors.join(', ')}}</b></p>
         </div>
       </div>
     </div>

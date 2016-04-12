@@ -1,14 +1,12 @@
 'use strict';
 
-var app = angular.module('clApp', [
+var app = angular.module('kApp', [
   'ngRoute',
   'ngCookies',
   'ngResource',
   'angular-loading-bar',
   'ui.bootstrap',
 ]);
-
-app.constant('cmsRoot', 'http://127.0.0.1:3000');
 
 app.config([
   '$routeProvider',

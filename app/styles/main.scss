@@ -20,7 +20,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     background-image: url("../images/image_not_found.png");
     display: block;
     max-width: 97%;
-    max-height: 97%;
     width: auto;
     height: auto;
     margin: auto;
@@ -32,6 +31,66 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
   .product-title {
     height: 40px;
+  }
+
+  .product-detail {
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    top: 0;
+    left: 40;
+    border: solid 1px #000000;
+    padding: 15px;
+
+    .product-images-sizes {
+      border: solid 2px #999999;
+      padding: 0;
+
+      .product-images {
+        .product-shown-image {
+          max-height: 400px;
+        }
+
+        .thumb {
+          position: absolute;
+          height: 50px;
+          top: 40px;
+          left: 30px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .product-sizes {
+        padding: 10px;
+        height: 80px;
+        background-color: #888888;
+        color: #ffffff;
+        text-align: center;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .product-title-price-brand {
+      text-align: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .brand {
+        color: #cccccc;
+      }
+    }
+
+    .star-ratings-css {
+      margin: auto;
+    }
   }
 }
 
