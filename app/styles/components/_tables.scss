@@ -1,0 +1,16 @@
+.create-btn {
+  margin-top: 20px;
+}
+
+.status {
+  padding: 4px 8px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  &.enabled {
+    background-color: #BBFAD5;
+  }
+  &.disabled {
+    background-color: #FFC5C7;
+  }
+}

@@ -1,0 +1,71 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.sorting-container {
+  margin: 20px;
+
+  .sorting-element {
+    width: 200px;
+    padding: 10px;
+  }
+}
+
+.product-container {
+  margin: 20px 0px;
+  padding: 20px;
+
+  img {
+    background-image: url("../images/image_not_found.png");
+    display: block;
+    max-width: 97%;
+    max-height: 97%;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .product-info {
+    padding: 20px 30px;
+  }
+
+  .product-title {
+    height: 40px;
+  }
+}
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 15px;
+  height: 25px;
+  width: 75px;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+
+  &-top {
+    color: #111111;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  &-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+
+  b {
+    text-shadow: none;
+    color: #000000;
+    padding-left: 10px;
+  }
+}

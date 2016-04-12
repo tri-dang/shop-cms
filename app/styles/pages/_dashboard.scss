@@ -1,0 +1,24 @@
+.tournament {
+	&.platinum {
+		background-color: #E5E4E2;
+	}
+	&.gold {
+		background-color: #FFD700;
+	}
+	&.silver {
+		background-color: #C0C0C0;
+	}
+}
+.icon {
+    img {
+        width: auto;
+        height: 100px;
+    }
+}
+.game.icon {
+    img {
+        margin-top: 10px;
+        width: auto;
+        height: 100px;
+    }
+}

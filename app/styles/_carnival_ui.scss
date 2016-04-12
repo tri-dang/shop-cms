@@ -1,0 +1,523 @@
+// temp stuff
+.ui_showroom {
+	button, a {
+		margin-bottom: 24px;
+	}
+}
+
+// sub nav
+ul.sub-nav-carn {
+	list-style: none;
+	li {
+		float: left;
+	}
+}
+
+// buttons
+.btn-carn {
+	min-width: 120px;
+	padding: 6px 20px 4px 20px;
+	color: #4B4E49;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.btn-carn-create {
+	background: #C3EBAF;
+  -webkit-box-shadow: 0 2px 0px #93B97F;
+  -moz-box-shadow: 0 2px 0px #93B97F;
+  box-shadow: 0 2px 0px #93B97F;
+  .glyphicon-ok-sign {
+  	padding-right: 2px;
+  	color: #5FA43C;
+  }
+}
+
+.btn-carn-update {
+	background: #D6EBEC;
+  -webkit-box-shadow: 0 2px 0px #A9BBBC;
+  -moz-box-shadow: 0 2px 0px #A9BBBC;
+  box-shadow: 0 2px 0px #A9BBBC;
+}
+
+.btn-carn-off {
+	background: #E1E1E1;
+  -webkit-box-shadow: 0 2px 0px #B0B0B0;
+  -moz-box-shadow: 0 2px 0px #B0B0B0;
+  box-shadow: 0 2px 0px #B0B0B0;
+}
+
+.btn-w-icon {
+	border: 0;
+	padding: 0;
+	background: #D6EBEC;
+  -webkit-box-shadow: 0 2px 0px #A6B9BA;
+  -moz-box-shadow: 0 2px 0px #A6B9BA;
+  box-shadow: 0 2px 0px #A6B9BA;
+	&.btn-carn-add {
+		.left-span {
+			float: left;
+			background: #A9CCCD;
+			padding: 8px 6px 8px 8px;
+		}
+		.right-span {
+			padding: 8px 6px 8px 30px;
+		}
+		.glyphicon-plus {
+			color: #fff;
+			font-size: 0.7em;
+		}
+	}
+}
+
+.btn-carn-dropdown {
+    background: #f5f5f5;
+  &.drop-toggle {
+    -webkit-box-shadow: -1px 2px 0px #B0B0B0;
+    -moz-box-shadow: -1px 2px 0px #B0B0B0;
+    box-shadow: -1px 2px 0px #B0B0B0;
+  }
+  &.dropdown-btn {
+    /*width: 200px;*/
+    -webkit-box-shadow: 0 2px 0px #B0B0B0;
+    -moz-box-shadow: 0 2px 0px #B0B0B0;
+    box-shadow: 0 2px 0px #B0B0B0;
+  }
+}
+
+.btn-carn-wheel {
+	min-width: 180px;
+	position: relative;
+	padding: 6px;
+  &.carn-active {
+		background: #E7FCDC;
+	  -webkit-box-shadow: 0 2px 0px #B8C9B0;
+	  -moz-box-shadow: 0 2px 0px #B8C9B0;
+	  box-shadow: 0 2px 0px #B8C9B0;
+	  .glyphicon-record, .glyphicon-ok-sign {
+	  	color: #5FA43C;
+	  }
+  }
+  &.carn-inactive {
+  	background: #E1E1E1;
+	  -webkit-box-shadow: 0 2px 0px #B4B4B4;
+	  -moz-box-shadow: 0 2px 0px #B4B4B4;
+	  box-shadow: 0 2px 0px #B4B4B4;
+	  .glyphicon-record, .glyphicon-minus-sign {
+	  	color: #969696;
+	  }
+  }
+  .left-span, .right-span {
+  	float: left;
+  }
+  .left-span {
+  	padding-top: 6px;
+  	padding-bottom: 6px;
+  }
+  .right-span {
+  	padding-top: 8px;
+  	padding-left: 10px;
+  	padding-bottom: 6px;
+  	text-align: left;
+  	h4 {
+  		margin: 0;
+  	}
+  }
+  .glyphicon-record {
+  	float: left;
+  	padding-left: 10px;
+  	font-size: 2.4em;
+  	color: #5FA43C;
+  }
+  .glyphicon-ok-sign, .glyphicon-minus-sign {
+  	float: right;
+  }
+  .date {
+  	display: block;
+  	width: 100%;
+  	font-size: 0.8em;
+  }
+}
+
+// tables
+.table-carn {
+	thead {
+		background: #EBEBEB;
+	}
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th{
+  background-color: #ffffdb;
+  cursor: pointer;
+}
+
+.table-usr{
+  width: 50%;
+}
+.selected {
+  background-color: #ffffdb;
+}
+
+//preview-game container
+.containerarrow {
+  margin-left: 15px;
+  width: 620px;
+  background: #ffffdb;
+  border: 1px solid #CAD5E0;
+  padding: 4px;
+  position: relative;
+  min-height: 160px;
+}
+
+.container-no-arrow {
+  margin-left: 15px;
+  width: 620px;
+  /*background: #FFFFFF;*/
+  border: 1px solid #CAD5E0;
+  padding: 4px;
+  position: relative;
+  min-height: 160px;
+  &:hover, &:active{
+    background-color: #ffffdb;
+    cursor: pointer;
+  }
+}
+
+.game-preview {
+  margin-left: -15px;
+  background: #FFFFFF;
+  border: 1px solid #CAD5E0;
+  padding: 15px;
+}
+
+.containerarrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50px;
+  right:-15px;
+  width: 30px;
+  height: 30px;
+  background: #ffffdb;
+  border-right:1px solid #CAD5E0;
+  border-bottom:1px solid #CAD5E0;
+  -moz-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+    &:hover, &:active{
+    background-color: #ffffdb;
+    cursor: pointer;
+  }
+}
+
+//status
+.carn-status-enable {
+  background: #C3EBAF;
+  padding: 4px 8px;
+  width: 90px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 0px #A9BBBC;
+  -moz-box-shadow: 0 2px 0px #A9BBBC;
+  box-shadow: 0 2px 0px #A9BBBC;
+  .glyphicon-ok-sign {
+    padding-right: 2px;
+    color: #5FA43C;
+  }
+}
+
+.carn-status-off {
+  background: #E1E1E1;
+  padding: 4px 8px;
+  width: 90px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 0px #B0B0B0;
+  -moz-box-shadow: 0 2px 0px #B0B0B0;
+  box-shadow: 0 2px 0px #B0B0B0;
+}
+
+//file upload
+//input[type="file"]{
+//  display: none;
+//}
+
+//radio button
+input[type=radio].enable2, input[type=radio].disable2{
+	display: none;
+}
+
+input[type="radio"]+label:before{
+  content:"";
+  display:inline-block;
+  height:27px;
+  width:25px;
+  vertical-align:middle;
+}
+
+input[type="radio"].enable2+label:before{
+  background:url(../images/radiobuttons.png)left top no-repeat;
+}
+
+input[type="radio"].enable2:checked+label:before{
+  background:url(../images/radiobuttons.png)-25px top no-repeat;
+}
+
+input[type="radio"].disable2+label:before{
+  background:url(../images/radiobuttons.png)-50px top no-repeat;
+}
+
+input[type="radio"].disable2:checked+label:before{
+  background:url(../images/radiobuttons.png)-75px top no-repeat;
+}
+
+//tournament logo
+.tournament-logo {
+  margin-left: 60px;
+  padding-left: 35px;
+  background: url('../images/tournament-logo.png') no-repeat;
+}
+
+//game logo
+.game-logo {
+  margin-left: 60px;
+  padding-left: 35px;
+  background: url('../images/game-logo.png') no-repeat;
+}
+
+//wheel logo
+.wheel-logo {
+  margin-left: 60px;
+  padding-left: 35px;
+  background: url('../images/wheel-logo.png') no-repeat;
+}
+
+//message logo
+.message-logo {
+  margin-left: 60px;
+  padding-left: 56px;
+  padding-bottom: 56px;
+  background: url('../images/message-logo.png') no-repeat;
+}
+
+//user logo
+.user-logo {
+  margin-left: 60px;
+  padding-left: 37px;
+  background: url('../images/user-logo.png') no-repeat;
+}
+
+//configuration logo
+.configuration-logo {
+  margin-left: 60px;
+  padding-left: 37px;
+  background: url('../images/configuration-logo.png') no-repeat;
+}
+
+.nav-activity-ok{
+  a {
+    text-decoration: none;
+    color: #555555;
+  }
+  li.active a{
+    text-decoration: none;
+  }
+  li a{
+    text-decoration: none;
+  }
+  .glyphicon-ok-sign {
+    padding-right: 2px;
+    color: #5FA43C;
+  }
+  .glyphicon-exclamation-sign {
+    padding-right: 2px;
+    color: #ED1C24;
+  }
+}
+
+.nav-activity-error{
+  a{
+    text-decoration: none;
+    color: #ED1C24;
+  }
+  li.active a{
+    text-decoration: none;
+    color: #ED1C24;
+  }
+}
+
+.nav-tabs{
+  li.active.nav-activity-error a {
+    color: #ED1C24;
+  }
+  i.glyphicon.glyphicon-ok-sign {
+     padding-right: 2px;
+     color: #5FA43C;
+  }
+  i.glyphicon-exclamation-sign {
+    padding-right: 2px;
+    color: #ED1C24;
+  }
+}
+
+a{
+  .nav-activity-error {
+    text-decoration: none;
+    color: #ED1C24;
+  }
+  .nav-activity-ok {
+    text-decoration: none;
+  }
+}
+
+
+.message.preview{
+  height: 700px;
+  width: 350px;
+  position: absolute;
+  background: url('../images/message-preview.png') no-repeat;
+  .titletext,.shorttext{
+    position: relative;
+    z-index: 10;
+    color: #FFF;
+    top: 270px;
+    left: 80px;
+    width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+
+.game-preview-text{
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.game.preview{
+  height: 120px;
+  width: 300px;
+  background: url('../images/preview-game.png') no-repeat;
+  background-size: 90%;
+}
+
+.tournament.preview{
+  height: 120px;
+  width: 300px;
+  background: url('../images/preview-tourn.png') no-repeat;
+  background-size: 90%;
+}
+
+.wheel.preview{
+  height: 120px;
+  width: 300px;
+  background: url('../images/preview-wheel.png') no-repeat;
+  background-size: 90%;
+}
+
+.msg.preview{
+  height: 120px;
+  width: 300px;
+  background: url('../images/preview-msg.png') no-repeat;
+  background-size: 90%;
+}
+
+.text.preview.title{
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 25px;
+  width: 150px;
+  font-size: 18px;
+  color: #424242;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.text.preview.count{
+    position: absolute;
+    top: 30px;
+    left: 220px;
+    font-size: 30px;
+    color: #828181;
+}
+
+//preview tournament logo
+.preview-tourn-logo {
+  /*margin-left: -30px;*/
+  padding-left: 37px;
+  font-size: 30px;
+  background: url('../images/preview-tourn-logo.png') no-repeat;
+  .titletext{
+    width: 190px;
+  }
+  .contenttext{
+    width: 500px;
+    margin-left: 200px;
+    margin-top: -35px;
+    line-height: 10px;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+//preview wheel logo
+.preview-wheel-logo {
+  /*margin-left: -30px;*/
+  padding-left: 37px;
+  font-size: 30px;
+  background: url('../images/wheel-logo.png') no-repeat;
+  .titletext{
+    width: 190px;
+  }
+  .contenttext{
+    width: 500px;
+    margin-left: 200px;
+    margin-top: -35px;
+    line-height: 10px;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+
+//preview game logo
+.preview-game-logo {
+  padding-left: 37px;
+  font-size: 30px;
+  background: url('../images/game-logo.png') no-repeat;
+}
+
+//overwrite the styling provided by ng-s3upload, the margin-top is using !important because margin-top is
+//set in the html and causing progress-bar to be filled half of the height only, need to set margin-top:0px
+//to fix this issue
+.progress {
+  margin-top:10px;
+  position: relative;
+}
+.progress-bar.progress-bar-striped {
+  margin-top:0px!important;
+  position: relative;
+  .sr-only{
+    position: relative;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+img.icon {
+    width: auto;
+    height: 100px;
+}

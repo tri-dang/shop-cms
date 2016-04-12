@@ -1,0 +1,24 @@
+.cl-login {
+  position: relative;
+  margin: 50px auto 0 auto;
+  width: 592px;
+  
+  // Error definition for Login error
+  .cl-login-error {
+    text-align: center;
+    .cl-login-error-header {
+      color: red;
+      font-size: 1.15em;
+      margin: .25em;
+    }
+    .cl-login-error-subheader {
+      font-size: 1em;
+      margin: .25em;
+      font-weight: bold;
+    }
+    .cl-login-error-message {
+      font-size: 1em;
+      list-style-position: inside;
+    }
+  }
+}
